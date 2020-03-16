@@ -21,22 +21,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
 });
 
 
-db.on("error", error => {
-    console.log("error")
-});
 
-app.get("/", (req, res)=>{
-
-});
-
-app.post("/submit", (req, res)=>{
-
-});
-
-
-app.delete("/clearall", (req, res)=> {
-
-});
+//getting routes
+app.use(require("./routes/api.js"));
 
 
  
