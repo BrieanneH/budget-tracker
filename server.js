@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
 
 
 //getting routes
-app.use(require("./routes/api.js"));
+app.use(require("routes/api.js"));
 
 
  

@@ -3,7 +3,6 @@ const FILES_TO_CACHE =[
     '/index.html',
     '/index.js',
     '/db.js',
-    '/manifest.webmanifest',
     '/style.css'
 ];
 
@@ -30,7 +29,7 @@ self.addEventListener("activate", function (evt){
         caches.keys().then(keyList => {
             return Promise.all(
                 keyList.map(key => {
-                    if(key !== CACHE_NAME && key !== DATA_CACHE_NAME {
+                    if(key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
                         console.log("Removing past cache data", key);
                         return caches.delete(key);
 

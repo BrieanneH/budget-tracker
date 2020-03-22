@@ -25,7 +25,7 @@ function saveRecord(record){
     const transaction = db.transaction(["pending"], "readwrite");
 
     //accessing store
-    const store = transaction.createObjectStore("pending");
+    const store = transaction.objectStore("pending");
 
     //adding record
     store.add(record);
@@ -44,7 +44,7 @@ function checkDB(){
         if (getAll.result.length > 0){
             fetch("/api/transaction/bulk", {
                 method: "POST",
-                body: JSON.stringify.(getAll.result),
+                body: JSON.stringify(getAll.result),
                 headers: {
                     Accept: "application/json, text/plain, */*",
                     "Content-Type": "application/json"
