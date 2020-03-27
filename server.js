@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/transaction", {
   useNewUrlParser: true,
   useFindandModify: false
 });
@@ -23,10 +23,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
 
 
 //getting routes
-app.use(require("routes/api.js"));
+app.use(require("models/api.js"));
 
 
- 
 
 
 app.listen(PORT,() => {

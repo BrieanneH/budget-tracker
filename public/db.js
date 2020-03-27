@@ -50,7 +50,9 @@ function checkDB(){
                     "Content-Type": "application/json"
                 }
                 })
-            .then(response => response.json())
+            .then(response => {
+                return response.json();
+            })
             .then(() => {
                 const transaction =db.transaction(["pending"],"readWrite");
 
