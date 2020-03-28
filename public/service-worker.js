@@ -69,7 +69,7 @@ self.addEventListener("fetch", function (evt){
             }).catch(err => console.log(err))
 
             
-        )
+        );
         return;
 
     }
@@ -84,3 +84,6 @@ self.addEventListener("fetch", function (evt){
 
 
 });
+
+
+
