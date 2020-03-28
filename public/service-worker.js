@@ -25,7 +25,7 @@ self.addEventListener("install", function (evt){
     self.skipWaiting();
 });
 
-//active
+//active, pg.227
 
 self.addEventListener("activate", function (evt){
     evt.waitUntil(
@@ -45,6 +45,7 @@ self.addEventListener("activate", function (evt){
 });
 
 self.clients.claim();
+
 
 self.addEventListener("fetch", function (evt){
     if(evt.request.url.includes("/api/")) {
