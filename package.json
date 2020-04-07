@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,19 @@
   },
   "homepage": "https://github.com/BrieanneH/budget-tracker#readme",
   "dependencies": {
+    "chart.js": "^2.9.3",
     "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "lite-server": "^2.5.4",
     "logger": "0.0.1",
+    "mongojs": "^3.1.0",
     "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
