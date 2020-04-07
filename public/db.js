@@ -1,6 +1,6 @@
 let db;
 // create request for a budget db
-const request = indexedDB.open("budget", 1);
+const request = indexedDB.open("transaction", 1);
 
 request.onupgradeneeded = function(event){
     //
