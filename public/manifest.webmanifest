@@ -1,4 +1,21 @@
 {
-    "name": "PWA Budget Tracker",
-    "short_name": "PWA BT"
+    "name": "budget-tracker",
+    "short_name": "Budget Tracker PWA",
+    "description": "A PWA budget tracker application with offline functionality",
+    "icons": [
+        {
+            "src": "./icons/192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/icon-512x512.png",
+            "sizes": "800x706",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
 }

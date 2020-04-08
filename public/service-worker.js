@@ -1,13 +1,22 @@
 //  referenced: https://github.com/w3c/ServiceWorker/issues/1237
 //              https://books.google.com/books?id=G4ZcDgAAQBAJ&newbks=1&newbks_redir=0&printsec=frontcover#v=onepage&q&f=false
 
-const FILES_TO_CACHE =[
+const FILES_TO_CACHE =[ //adding more specificity to my cache files 
     '/',
-    '/index.html',
-    '/index.js',
-    '/db.js',
-    '/style.css'
+    './index.html',
+    './favicon.ico',
+    './index.js',
+    './style.css',
+    './manifest.webmanifest',
+    './icons/192x192.png',
+    './icons/icon-512x512.png',
+    './db.js',
+    'https://cdn.jsdelivr.net/npm/chart.js@2.8.0',
+    'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+    'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0',
+    'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0'
 ];
+
 
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";

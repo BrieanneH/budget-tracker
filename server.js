@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const logger = require("morgan");
 const compression = require("compression");
 const mongojs = require('mongojs');
-const path = require("path");
+//const path = require("path");//no longer used
 require('dotenv').config();
 
 
