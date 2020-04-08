@@ -27,7 +27,7 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME)
             .then(chache => {
                 console.log('pre-cache sucessful')
-                retutn caches.addAll(FILES_TO_CACHE)
+                return caches.addAll(FILES_TO_CACHE)
             })
     )
     self.skipWaiting()
@@ -91,7 +91,7 @@ self.addEventListener('fetch', event =>{
  event.respondWith(
     caches.open(CACHE_NAME)
     .then(cache => {
-        reutn cache.match(event.request)
+        return cache.match(event.request)
             .then(cache =>{
                 return cache.match(event.request) //if response exists return
                 .then(response => {
